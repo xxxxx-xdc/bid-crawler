@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: '0 * * * *'
   workflow_dispatch:
-
+  # 강제 트리거용
 jobs:
   build:
     runs-on: ubuntu-latest

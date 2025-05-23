@@ -26,4 +26,5 @@ jobs:
         git config --global user.email 'bot@example.com'
         git add bid-data.json
         git commit -m "자동 업데이트: 공고 데이터 최신화" || echo "변경사항 없음"
-        git push
+        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+
